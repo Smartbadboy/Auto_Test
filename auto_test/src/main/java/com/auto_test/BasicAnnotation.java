@@ -31,8 +31,6 @@ public class BasicAnnotation {
     public void BeforeSuite(){
         System.out.println("测试套件前");
     }
-
-    
     @AfterSuite
     public void AfterSuite(){
         System.out.println("测试套件后222");

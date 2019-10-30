@@ -28,6 +28,8 @@ public class BasicAnnotation {
         System.out.println("类运行之后的方法");
     }
     @BeforeSuite
+
+    
     public void BeforeSuite(){
         System.out.println("测试套件前");
     }

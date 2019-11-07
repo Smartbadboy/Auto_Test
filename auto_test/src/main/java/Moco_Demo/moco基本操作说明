@@ -1,0 +1,5 @@
+java -jar ./moco-runner-0.12.0-standalone.jar http -p 8889 -c startDemo.json
+
+uri:代表访问路径
+method：标识什么方法
+response：响应

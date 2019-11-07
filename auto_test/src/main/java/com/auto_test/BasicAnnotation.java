@@ -29,7 +29,7 @@ public class BasicAnnotation {
     }
     @BeforeSuite
 
-    
+
     public void BeforeSuite(){
         System.out.println("测试套件前");
     }

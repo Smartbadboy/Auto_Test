@@ -1,0 +1,127 @@
+[
+  {
+    "description": "展示一个不带参数的get请求",
+    "request": {
+      "uri": "/getdemo",
+      "method": "get"
+    },
+    "response": {
+      "text": "这是一个不带参数的get请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "展示一个不带参数的get请求",
+    "request": {
+      "uri": "/getdemo",
+      "method": "get",
+      "queries": {
+        "name": "huhansan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "text": "这是一个带参数的get请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "展示一个不带参数的post请求",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post"
+    },
+    "response": {
+      "text": "这是一个不带参数的post请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "展示一个不带参数的post请求",
+    "request": {
+      "uri": "/postparam",
+      "method": "post",
+      "forms": {
+        "name": "huhansan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "text": "这是一个带参数的post请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+
+  {
+    "description": "展示一个不带参数的含有cookie的get请求",
+    "request": {
+      "uri": "/get/getcookie",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "展示一个不带参数的含有cookie的get请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+
+  {
+    "description": "展示一个带参数的含有cookie的post请求",
+    "request": {
+      "uri": "/post/postcookie",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "huhansan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "json": {
+        "text": "带cookie的json格式参数的post请求",
+        "status": "200"
+      },
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+
+  {
+    "description": "展示一个带参数的含有cookie的post请求",
+    "request": {
+      "uri": "/post/postcookies",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "huhansan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "json": {
+        "text": "带cookie的json格式参数的post请求",
+        "status": "200"
+      },
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  }
+]
